@@ -179,7 +179,7 @@ function loadPizzaStateFromURL() {
 // Load state on startup
 loadPizzaStateFromURL();
 
-const modelContext = document.modelContext || navigator.modelContext;
+const modelContext = document.modelContext;
 if (modelContext) {
   const urlParams = new URLSearchParams(window.location.search);
   if (!urlParams.has('showButtons')) {
